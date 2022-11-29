@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgba(48, 221, 207, 0.774);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+    color:rgb(14, 163, 131);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-transform:uppercase
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight:normal;;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+.tituloprincipal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin:40px;
+}
+
+.tituloinicio {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    word-spacing: 6px;
+}
+
+.comienzo{
+    width: 100%;
+    margin: 0;
+    height: 100%;
+}
+
+#tratamientos {
+    display:flex;
+    flex-flow: row wrap ;
+    justify-content: space-around;
+    align-items: space-between;
+    padding: 15px;
+    margin:15px;
+    text-align: center;
+}
+
+#tratamientos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 100px;
+}
+
+.borde1, .borde2, .borde3, .borde4, .borde5, .borde6{
+    border:  double #ffffff;
+    margin: 25px;
+    padding: 25px;
+}
+
+.imgcorporal { 
+    width: 250px;
+    height: 250px;
+    position:;
+    border:solid 3px white;
+    transition: all 1s;
+}
+
+.imgcorporal:hover{
+    width: 300px ;
+    height: 300px;
+}
+
+.imgfaciales{
+    width:250px ;
+    height: 250px;
+    border:solid 3px white;
+    transition: all 1s;
+}
+
+.imgfaciales:hover{
+    width: 300px;
+    height:300px;
+}
+
+.masajesimg{
+    width: 250px;
+    height: 250px;
+    border: solid 3px white;
+    transition: all 1s;
+}
+
+.masajesimg:hover{
+    width: 300px;
+    height: 300px;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+
+.formulariocontacto {
+    margin:0 auto;
+    width:400px;
+}
+
+input, textarea {
+    width:380px;
+    height:27px;
+    background:#ffffff;
+    border:2px solid #18f3e1;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+
+textarea {
+    height:150px;
+}
+
+#submit {
+    width:85px;
+    height:35px;
+    border:2px solid #10e6b7;
+    margin-top:20px;
+    margin-bottom: 20px;
+    cursor:pointer;
+    text-decoration: none;
+    color:black
+}
+
+.seccionesprincipales {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin: 60px;
+    text-align: center;
+    content: normal;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.png{
+    margin: 15px;
+}
+
+.titulos {
+    font-size: 25px;
+    transition: all 1s;
+}
+
+.titulos:hover{
+font-size: 30px ;
+}
+
+#botonturnos {
+    background-color: white;
+    font-size:15px;
+    margin: 0 auto;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    word-spacing: 15px;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #A0F2E1;
+}
+
+.mapa{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.info{ 
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.infof{
+    font-size: 20px;
+}
+
+.turnos{
+    text-align: center;
+    margin: 50px;
+}
+
+#contacto{
+    text-align: center;
+    margin: 40px;
+}
+
+.carousel{
+    margin-top: 25px;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    width: 100%;
+}
+
+@media screen and (max-width:1024px){
+    footer{
+        display: grid;
+        justify-content: center;}
+    #tratamientos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .masajesimg, .imgcorporal, .imgfaciales{
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .seccionesprincipales{ 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .estetica1, .estetica2, .estetica3{
+        content: 1fr;
+
+}
+
+    #tratamientos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 30px;
+    }
+
+    .masajesimg, .imgcorporal, .imgfaciales{
+        width: 200px;
+        height: 200px;
+    }
+
+    .informacion{
+        display: none;
+    }
+
+    footer{
+        display: grid;
+        justify-content: center;
+    }
+}
