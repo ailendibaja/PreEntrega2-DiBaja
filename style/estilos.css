@@ -50,8 +50,12 @@ p{
 
 .comienzo{
     width: 100%;
-    margin: 0;
+    margin: 0px;
     height: 100%;
+}
+
+.carousel{
+    margin-top: 40px;
 }
 
 #tratamientos {
@@ -119,11 +123,6 @@ label {
     letter-spacing:1px;
 }
 
-.formulariocontacto {
-    margin:0 auto;
-    width:400px;
-}
-
 input, textarea {
     width:380px;
     height:27px;
@@ -177,19 +176,24 @@ textarea {
 font-size: 30px ;
 }
 
-#botonturnos {
-    background-color: white;
-    font-size:15px;
-    margin: 0 auto;
-    padding: 10px; 
+.formulario{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content:space-between;
+    margin: 20px; 
+}
+
+#botonturnos{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
 
 .reservar{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 50px;
@@ -229,25 +233,10 @@ header{
     margin: 50px;
 }
 
-#contacto{
-    text-align: center;
-    margin: 40px;
-}
-
-.carousel{
-    margin-top: 25px;
-}
-
 footer{
     background-color: rgb(255, 255, 255);
     text-align: right;
     width: 100%;
-}
-
-@media screen and (min-width: 1024px){
-    .estetica1{
-        transform: rotateX('70 deg')
-    }
 }
 
 @media screen and (max-width:1024px){
@@ -288,5 +277,11 @@ footer{
     footer{
         display: grid;
         justify-content: center;
+    }
+
+    .carousel{
+        margin-top: 40px;
+        width: 100%;
+        max-width: 768px;
     }
 }

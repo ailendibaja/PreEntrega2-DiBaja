@@ -39,9 +39,9 @@
     </section>
 
     <section>
-        <form>
-            <select name="selector de tratamiento" id="botonturnos">
-                <option value="seleccioneeltratamiento">Seleccione el tratamiento</option>
+            <div class="botonturnos">
+            <select class="form-select center" aria-label="Default select example">
+                <option selected>Seleccioná el tratamiento</option>
                 <option value="limpiezafacialprofunda">Limpieza facial profunda </option>
                 <option value="limpiezafacialradiofrecuenciafototerapia">Limpieza facial + radiofrecuencia o fototerapia</option>
                 <option value="dermaplaning">Dermaplaning</option>
@@ -52,23 +52,33 @@
                 <option value="masajes">Masajes</option>
                 <option value="drenajelinfático">Drenaje linfático</option>
             </select>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <form>
+            <div class="form-row">
+            <div class="form-group col-md-20">
+                <label for="inputname">Nombre</label>
+                <input type="name" class="form-control" id="inputName" placeholder="Nombre">
+            </div>
+            <div class="form-group col-md-20">
+                <label for="inputnumber">Teléfono</label>
+                <input type="number" class="form-control" id="inputnumber" placeholder="Teléfono">
+            </div>
+            </div>
+            <div class="form-group col-md-20">
+                <label for="inputEmail">Email</label>
+                <input type="emaiil" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-20">
+            <label for="exampleFormControlTextarea1">Dejanos tu mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Enviar</button>
         </form>
     </section>
 
-    <section id="contacto">
-        <h2>Contactanos</h2>
-        <form class="formulariocontacto">
-            <label for="nombre">Nombre:</label>
-            <input id="nombre" name="nombre" placeholder="nombre completo">
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
-            <label for="telefono">Telefono</label>
-            <input id="telefono"  name="telefono" type="number" placeholder="telefono">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" placeholder="dejanos tu mensaje"></textarea>
-            <input id="submit" name="submit" type="submit" value="enviar">
-        </form>
-    </section>
 
     <section class="informacion">
         <div class="mapa">
