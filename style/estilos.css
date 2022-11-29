@@ -244,6 +244,12 @@ footer{
     width: 100%;
 }
 
+@media screen and (min-width: 1024px){
+    .estetica1{
+        transform: rotateX('70 deg')
+    }
+}
+
 @media screen and (max-width:1024px){
     footer{
         display: grid;
@@ -263,11 +269,6 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-
-    .estetica1, .estetica2, .estetica3{
-        content: 1fr;
-
-}
 
     #tratamientos{
         grid-template-columns: 1fr;
