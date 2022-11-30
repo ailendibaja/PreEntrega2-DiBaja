@@ -138,17 +138,6 @@ textarea {
     height:150px;
 }
 
-#submit {
-    width:85px;
-    height:35px;
-    border:2px solid #10e6b7;
-    margin-top:20px;
-    margin-bottom: 20px;
-    cursor:pointer;
-    text-decoration: none;
-    color:black
-}
-
 .seccionesprincipales {
     display: flex;
     justify-content: space-between;
@@ -216,6 +205,7 @@ header{
     display: flex;
     margin-top: 50px;
     margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 .info{ 
@@ -239,10 +229,23 @@ footer{
     width: 100%;
 }
 
+@media screen and (min-width:1025px) {
+    .informacion{
+    justify-content: space-evenly;
+    }
+    .info{
+        font-size: 20px;
+    }
+    .infof{
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width:1024px){
     footer{
         display: grid;
-        justify-content: center;}
+        justify-content: center;
+    }
     #tratamientos{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -258,27 +261,22 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-
     #tratamientos{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-row-gap: 30px;
     }
-
     .masajesimg, .imgcorporal, .imgfaciales{
         width: 200px;
         height: 200px;
     }
-
     .informacion{
         display: none;
     }
-
     footer{
         display: grid;
         justify-content: center;
     }
-
     .carousel{
         margin-top: 40px;
         width: 100%;
