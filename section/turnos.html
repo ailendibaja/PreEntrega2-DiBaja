@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" href="../img/logoesteticacarpediem.png" type="image/x-icon">
     <title>Turnos</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #ffffff;" class="nav">
+        <nav class="navbar navbar-expand-lg" class="nav">
             <div class="container-fluid">
                 <a> <img src="../img/logoesteticacarpediem.png" alt="logo nav"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,32 +36,45 @@
     </section>
 
     <section class="turnos">
-        <h2>Reservá tu turno</h2> 
+        <div>
+            <h2>Reservá tu turno</h2> 
+            <select class="form-select" aria-label="Default select example">
+            <option value="Limpieza Facial Profunda">Limpieza Facial Profunda</option>
+            <option value="Limpieza Facial Profunda + Radiofrecuencia">Limpieza Facial Profunda + Radiofrecuencia"</option>
+            <option value="Limpieza Facial Profunda + Fototerapia">Limpieza Facial Profunda + Fototerapia"</option>
+            <option value="Limpieza Facial + Dermaplaning">Limpieza Facial + Dermaplaning</option>
+            <option value="Dermapen">Dermapen</option>
+            <option value="Sesion Ultracavitacion + Radiofrecuencia">Sesion Ultracavitacion + Radiofrecuencia</option>
+            <option value="Sesion Ultracavitacion + Radiofrecuencia + Electrodos">Sesion Ultracavitacion + Radiofrecuencia + Electrodos</option>
+            <option value="Sesion Electrodos + Radiofrecuencia">Sesion Electrodos + Radiofrecuencia</option>
+            <option value="Masajes">Masajes</option>
+            <option value="Drenaje Linfático">Drenaje Linfático</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="calendario">
+        <img src="../img/calendario.png" class="img-fluid" alt="calendario provisorio">
     </section>
 
     <section class="formulario">
+        <h3 class="tituloformulario">Dejanos tu consulta</h3>
         <form>
-            <div class="form-row">
-            <div class="form-group col-md-20">
-                <label for="inputname">Nombre</label>
-                <input type="name" class="form-control" id="inputName" placeholder="Nombre">
-            </div>
-            <div class="form-group col-md-20">
-                <label for="inputnumber">Teléfono</label>
-                <input type="number" class="form-control" id="inputnumber" placeholder="Teléfono">
-            </div>
-            </div>
-            <div class="form-group col-md-20">
-                <label for="inputEmail">Email</label>
-                <input type="emaiil" class="form-control" id="inputEmail" placeholder="Email">
-            </div>
-            <div class="form-group col-md-20">
-            <label for="exampleFormControlTextarea1">Dejanos tu mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-light">Enviar</button>
+            <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre completo">
+            <label for="phone">Teléfono:</label>
+                <input type="text" id="phone" name="phone" placeholder="Teléfono de contacto">
+            <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+            <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="6" cols="50">
+                </textarea>
         </form>
+        <div class="d-grid gap-2 col-6 mx-auto" id="botonenviar">
+            <button class="btn btn-light" type="button">Enviar</button>
+        </div>
     </section>
+
 
     <section class="informacion">
         <div class="mapa">
@@ -69,16 +83,16 @@
         <div class="info">
             <ul>
                 <li>
-                    <h2 class="infof">Dirección</h2>
+                    <h2 class="infofont">Dirección</h2>
                     <p>Villa Devoto, CABA.</p>
                 </li>
                 <li>
-                    <h2 class="infof">Contacto</h2>
+                    <h2 class="infofont">Contacto</h2>
                     <p>Cel: +54 11 2573 2000</p>
                 </li>
                 <li>
-                    <h2 class="infof">Horarios</h2>
-                    <p>Lunes a viernes de 09:00 a 20:00Hs</p>
+                    <h2 class="infofont">Horarios</h2>
+                    <p>Lunes a Sábados de 09:00 a 20:00Hs</p>
                 </li>
             </ul>
         </div>
@@ -86,10 +100,10 @@
 
     <footer id="pie">
         <div>
-            <a href="https://www.facebook.com/profile.php?id=100085642913209&sk=about" target="_blank"><img src="../img/iconfacebook.svg" alt="logofacebook"></a>
             <a href="https:www.instagram.com/esteticacarpediem_/?hl=es-la" target="_blank"><img src="../img/iconinstagram.svg" alt="logoinstagram"></a>
-            <a href="https://api.whatsapp.com/message/PWQGD7JAPXDHI1?autoload=1&app_absent=0" target="_blank"> <img src="../img/iconwhatsapp.svg" alt="logowhatsapp"></a>
             <a href="https://tiktok.com" target="_blank" > <img src="../img/icontiktok.svg" alt="logotiktok"></a>
+            <a href="https://api.whatsapp.com/message/PWQGD7JAPXDHI1?autoload=1&app_absent=0" target="_blank"> <img src="../img/iconwhatsapp.svg" alt="logowhatsapp"></a>
+            <a href="https://www.facebook.com/profile.php?id=100085642913209&sk=about" target="_blank"><img src="../img/iconfacebook.svg" alt="logofacebook"></a>
         </div>
 </main>
     </footer>
