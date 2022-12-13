@@ -1,0 +1,33 @@
+#tratamientos { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-between;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 80px;
+    .bordes {
+        border: double #ffffff;
+        margin: 20px;
+        padding: 20px;
+        h2{
+            @include font (27px , 4px);
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p{
+            @include font (17px , 3px);
+        }
+    }
+}
+
+.reservar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}

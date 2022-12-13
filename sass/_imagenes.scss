@@ -1,0 +1,17 @@
+@mixin tamaño ($width , $height){
+    width: $width;
+    height: $height;
+}
+.imagenes{
+    @include tamaño (300px, 300px);
+    border: solid 3px white;
+    transition: all 1s;
+    &:hover {
+    @include tamaño (350px, 350px);
+    }
+}
+
+.carousel {
+    margin-top: 40px;
+    max-width: 100%;
+}

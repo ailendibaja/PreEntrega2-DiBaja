@@ -1,0 +1,23 @@
+@mixin font ($font-size , $word-spacing){
+    font-size: $font-size;
+    word-spacing: $word-spacing;
+}
+
+.tituloprincipal {
+    display: flex;
+    justify-content: center;
+    font-family: $roboto;
+    text-align: center;
+    margin: 50px;
+    h1{
+        @include font (50px , 6px);
+    }
+}
+
+.tituloinicio {
+    @extend .tituloprincipal;
+    margin: 40px;
+    h1{
+        @include font (40px , 6px);
+    }
+}
