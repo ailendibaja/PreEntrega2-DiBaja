@@ -186,10 +186,10 @@ header nav {
   display: grid;
   justify-content: center;
   text-align: center;
-  margin: 50px;
+  margin: 15px;
 }
 .turnos .texto {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .turnos .selector-tratamientos {
   margin: 30px;
